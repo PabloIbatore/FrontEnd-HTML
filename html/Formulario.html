@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pedido Don Chatito</title>
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/PabloIbatore/FrontEnd-HTML/main/Imagenes/Don%20Chatito%20Logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+   <!-- Encabezado -->
+   <header>
+    <nav>
+        <a href="file:///C:/Users/pablo/Documents/IBATORE/Curso%20Microsoft/Mision%20FrontEnd/HTML%20-%20Pasteleria/index.html#">Inicio</a>
+        <a href="file:///C:/Users/pablo/Documents/IBATORE/Curso%20Microsoft/Mision%20FrontEnd/HTML%20-%20Pasteleria/Formulario.html">Haz tu pedido</a>
+        <a href="#">Pasteles</a>
+        <a href="#">Decoraciones</a>
+        <a href="#">Nuestros Servicios</a>
+    </nav>
+    
+
+
+    <h1 align="center">Aqui puedes hacer tu pedido del Pastel</h1>
+    <form action="/accion.js" id="form1" method="post">
+        <div align="center">
+            <label for="Input1"> Nombre Completo</label><br>
+            <input type="text" placeholder="Ingresa tu nombre" id="Input1" name="Input1"><br><br>
+
+            <label for="correo1">Correo electronico</label><br>
+            <input type="email" placeholder="Ejemplo@hotmail.com" id="correo1" name="correo1"><br><br>
+
+            <label for="numero1">Cuantos pasteles</label><br>
+            <input type="number" placeholder="Cantidad" id="numero1" name="numero1"><br><br>
+
+            <label for="tel1">Numero de telefono</label><br>
+            <input type="tel" placeholder="Telefono a 10 Digitos" id="tel1" name="tel1" maxlength="10"><br><br>
+
+            <label for="fecha1">Ingresa la fecha a entregar</label><br>
+            <input type="date" id="fecha1" name="fecha1"><br>
+
+
+            <label for="Sabor">Escoge tu Pastel</label><br>
+            <select id="Sabor" name="Sabor">
+                <option value="Chocolate">Pastel de chocolate con Nuez($300)</option>
+                <option value="Vainilla">Pastel de Nutella ($350)</option>
+                <option value="Cajeta">Pastel de frutos Rojos ($280)</option>
+                <option value="Red Velvet">Tarta de Frutas ($320)</option>
+                <option value="Red Velvet">Pastel Hombre Araña ($380)</option>
+                <option value="Red Velvet">Pastel Batman vs Guasón ($420)</option>
+                <option value="Red Velvet">Pastel Toy Story ($400)</option>
+                <option value="Red Velvet">Pastel de Bodas($750)</option>
+            </select><br><br>
+
+            <label for="decoracion">Escoge tu decoracion</label><br>
+            <select id="decoracion" name="decoracion">
+                <option value="Ninguno"> Ninguna</option>
+                <option value="Fondant">Fondant ($95)</option>
+                <option value="Sprinkles">Chispas de chocolate ($50)</option>
+                <option value="Chispas de chocolate">Crema Batida ($45)</option>
+                <option value="Buttercream">Vela de chispas ($30)</option>
+                <option value="Buttercream">Nombre en Pastel ($10)</option>
+                <option value="Buttercream">Helado ($120)</option>
+                <option value="Buttercream">Nuez extra ($30)</option>
+                <option value="Buttercream">Canela ($15)</option>
+            </select><br><br>
+
+            <label for="Input2"> Ingresa tu dirección</label><br>
+            <input type="text" placeholder="Calle y numero" id="Input2" name="Input2"><br><br>
+
+            <label for="Input2"> Informacion adicional</label><br>
+            <input type="text" placeholder="Datos o detalles extras" id="Input2" name="Input2"><br><br>
+
+            <input type="button" id="boton1" name="boton1" value="Enviar pedido" onclick="alert('Se ha enviado el pedido');"><br><br>
+            <input type="reset"><br>
+    
+    </div></form>
+    
+    <footer>
+    <div class="contenedor-footer">
+        <div class="content-foo">
+            <h4>Telefono</h4>
+            <p>55-3485-0000</p>
+        </div>
+        <div class="content-foo">
+            <h4>e-mail</h4>
+            <p>pasteles@donchatitio.com</p>
+        </div>
+        <div class="content-foo">
+            <h4>Ubicación</h4>
+            <p>8296312</p>
+        </div>
+    </div>
+    <h2 class="titulo-final">&copy; Ibatore Design | Pablo Ibarra for LaunchX</h2>
+    </footer>
+</body>
+</html>
